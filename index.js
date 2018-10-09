@@ -6,6 +6,7 @@ function takeANumber(katzDeliLine, customerName){
 }
 function takeANumberAlt(katzDeliLine){
   var newNumber = 1;
+  newNumber++;
   katzDeliLine.push(newNumber);
   return `Welcome, your number is ${newNumber}.`
 }
