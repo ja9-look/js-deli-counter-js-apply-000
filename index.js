@@ -4,14 +4,16 @@ function takeANumber(katzDeliLine, customerName){
   return `Welcome, ${customerName}. You are number ${customerOrder} in line.`
   
 }
+var newNumber = 1;
 function takeANumberAlt(katzDeliLine){
-  var newNumber = 1;
   newNumber++;
   katzDeliLine.push(newNumber);
   return `Welcome, your number is ${newNumber}.`
 }
 
-
+function resetTotal(katzDeliLine){
+  newNumber = 1;
+}
 
 function nowServing(katzDeliLine){
   if (katzDeliLine.length === 0){
